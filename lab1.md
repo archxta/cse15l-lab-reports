@@ -89,7 +89,7 @@ architap@Architas-MacBook-Pro ~ % cat cse15l-lab-reports
 cat: cse15l-lab-reports: Is a directory
 
 ```
-The command cat with a path to the cse15l-lab-reports directory  outputs an error message indicating that cse15l-lab-reports is a directory and not a file. The cat command expects files as arguments so it can display the contents of the file, so attempting to use it with a directory will result in this error. 
+The command cat with a path to the cse15l-lab-reports directory  outputs an error message indicating that cse15l-lab-reports is a directory and not a file. The cat command expects files as arguments so it can display the contents of the file, so attempting to use it with a directory will result in an error. 
 
 3. **path to file as argument**
 
@@ -99,7 +99,7 @@ architap@Architas-MacBook-Pro ~ % cat cse15l-lab-reports/sample.md
 this is a sample file
 
 ```
-The command cat with a path to the cse15l-lab-reports/sample.md file outputs the contents inside the sample.md file (this is a sample file). The cat command expects files as arguments so with a file argument, it concatenates the contents of the file and outputs them directly to the terminal. 
+The command cat with a path to the cse15l-lab-reports/sample.md file outputs the contents inside the sample.md file (this is a sample file). The cat command expects files as arguments so with a file argument, it concatenates the contents of the file and outputs them directly to the terminal. This does not produce an error. 
 
 
 
