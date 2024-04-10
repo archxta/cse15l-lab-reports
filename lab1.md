@@ -17,7 +17,7 @@ architap@Architas-MacBook-Pro ~ % cd cse15l-lab-reports/
 architap@Architas-MacBook-Pro cse15l-lab-reports % 
 
 ```
-The command cd with a path to the cse15l-lab-reports directory brought me back to the cse15l-lab-reports directory as shown above. Thus, the current directory changed from home to cse15l-lab-reports after running this command. This output is not an error. 
+The command cd with a path to the cse15l-lab-reports directory brought me to the cse15l-lab-reports directory as shown above. Thus, the current directory changed from home to cse15l-lab-reports after running this command. This output is not an error. 
 
 3.  **path to file as argument**
 
