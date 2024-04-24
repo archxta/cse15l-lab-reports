@@ -58,3 +58,12 @@ class NumberServer {
 ### Examples Messages using /add
 
 ![Example 1](./Message1.png)
+
+For this example, the handleRequest method is called with http://localhost:4000/add-messages?s=hello&user=archita being the argument passed to this method. As the lines of code in this method get executed, the value of messages is set to whatever is in front of the s= portion of the url which in this case is "hello", the value of the urlS variable is set to the current url that was passed (http://localhost:4000/add-messages?s=hello&user=archita), and the value of the user variable is set to whatever is after user= in the url which in this case is archita. The String.join("\n", messages) line formats the user and messages argument appropriately by adding one line in between each new message addition. 
+
+![Example 2](./Messages2.png)
+
+For this example, the handleRequest method is again called with http://localhost:4000/add-messages?s=i%20like%20food&user=anushka being the argument passed to this method. As the lines of code in this method get executed, the value of messages is set to whatever is in front of the s= portion of the url which in this case is "amazing", the value of the urlS variable is set to the current url that was passed (http://localhost:4000/add-messages?s=i%20like%20food&user=anushka), and the value of the user variable is set to whatever is after user= in the url which in this case is anushka. The String.join("\n", messages) line formats the user and messages argument appropriately by adding one line in between each new message addition. 
+
+    
+
