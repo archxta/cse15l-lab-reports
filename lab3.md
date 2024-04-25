@@ -79,7 +79,7 @@ For this example, the handleRequest method is again called with http://localhost
 ![3](./NoPassword.png)
 
 ## Part 3
-### I learned how we can login to the remote server without needing a password as well as how we can properly move files from our remote server to our local computer. I think it's really helpful to be able to move files from our remote server to our local computer because opying files locally enables collaboration by allowing multiple users to work on the same files simultaneously. 
+### I learned how we can login to the remote server without needing a password as well as how we can properly move files from our remote server to our local computer. I think it's really helpful to be able to move files from our remote server to our local computer because copying files locally enables collaboration by allowing multiple users to work on the same files simultaneously. 
 
     
 
