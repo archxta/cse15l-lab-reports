@@ -13,19 +13,21 @@ class NumberHandler implements URLHandler {
     List<String> messages = new ArrayList<>();
 
     public String handleRequest(URI url) {
-       
-  
-            if (url.getPath().contains("/add-message")) {
+
                 String urlS = url.toString();
                 String message = "";
                 String user = "";
+       
+  
+            if (url.getPath().contains("/add-message") && url.getQuery().contains("s="))) {
+               
 
-                if (url.getQuery().contains("s=")) {
                     message = urlS.split("s=")[1];
                     message = message.split("&")[0];
-                }
+            }    
+                
 
-                if (url.getQuery().contains("user=")) {
+            if (url.getPath().contains("/add-message") && url.getQuery().contains("user=")) {
                     user = urlS.split("user=")[1];
                 }
 
@@ -34,6 +36,7 @@ class NumberHandler implements URLHandler {
 
                 return String.join("\n", messages);
             }
+
             return "404 Not Found!";
         
     }
@@ -50,7 +53,7 @@ class NumberServer {
 
         int port = Integer.parseInt(args[0]);
 
-        Server.start(port, new Handler());
+        Server.start(port, new NumberHandler());
     }
 }
 
