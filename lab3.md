@@ -8,7 +8,7 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
-class Handler implements URLHandler {
+class NumberHandler implements URLHandler {
 
     List<String> messages = new ArrayList<>();
 
