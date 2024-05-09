@@ -100,8 +100,8 @@ After fixing the bug
 
 
 # Part 2: Researching Commands 
-# Option 1: find -name (search by filename pattern), Source: https://www.howtoforge.com/tutorial/linux-find-command/
-# Example 1: 
+## Option 1: find -name (search by filename pattern), Source: https://www.howtoforge.com/tutorial/linux-find-command/
+### Example 1: 
 
 ```
 find ./technical -name "*.txt"
