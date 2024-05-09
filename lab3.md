@@ -44,6 +44,7 @@
 
 }
 ```
+
 3. Running the two tests 
 
 ![Example 1](./bug.png)
@@ -101,11 +102,11 @@ After fixing the bug
  ## Option 1: find -name (search by filename pattern), Source: https://www.howtoforge.com/tutorial/linux-find-command/
  ### Example 1: 
 
- ```
+```
 find ./technical -name "*.txt"
-```
+
 Output: 
-```
+
 ./technical/government/About_LSC/LegalServCorp_v_VelazquezSyllabus.txt
 ./technical/government/About_LSC/Progress_report.txt
 ./technical/government/About_LSC/Strategic_report.txt
@@ -138,6 +139,7 @@ Output:
 ./technical/government/Env_Prot_Agen/nov1.txt
 ....
 ```
+
 ....more .txt files
 This command searches for files within the ./technical directory and its subdirectories with the .txt extension.
 
@@ -145,12 +147,12 @@ This command searches for files within the ./technical directory and its subdire
 
 ```
 find ./technical -type d -name "biomed*"
-```
 
 Output
-```
+
 ./technical/biomed
 ```
+
 This command searches for directories within the ./technical directory with names starting with "biomed".
 
 ## Option 2: find --not (display names that don’t match search pattern), Source: https://www.howtoforge.com/tutorial/linux-find-command/
@@ -158,10 +160,9 @@ This command searches for directories within the ./technical directory with name
 
 ```
 find ./technical -not -name "*.txt"
-```
 
 Output
-```
+
 ./technical
 ./technical/government
 ./technical/government/About_LSC
@@ -183,10 +184,9 @@ This command prints the file names that do not match the search pattern. In this
 
 ```
 find ./technical -type d -not -name "biomed*"
-```
 
 Output 
-```
+
 ./technical
 ./technical/government
 ./technical/government/About_LSC
@@ -198,6 +198,7 @@ Output
 ./technical/plos
 ./technical/911report
 ```
+
 This command prints the directories that do not match the search pattern. In this case, we want to find all the directories that do not have "biomed" in its path. 
 
 ## Option 3: find -size (search files by size), Source: https://www.howtoforge.com/tutorial/linux-find-command/
@@ -205,22 +206,21 @@ This command prints the directories that do not match the search pattern. In thi
 
 ```
 find ./technical -type f -size -1k
-```
 
 Output
-```
+
 ./technical/plos/pmed.0020191.txt
 ./technical/plos/pmed.0020226.txt
 ```
+
 This command search files by size, and in this case, this command will search for files within the ./technical directory and its subdirectories that are smaller than 1 megabyte. 
 
 ### Example 6
 ```
 find ./technical -type f -size +170k
-```
+
 Output
 
-```
 ./technical/government/About_LSC/commission_report.txt
 ./technical/government/Env_Prot_Agen/multi102902.txt
 ./technical/government/Env_Prot_Agen/bill.txt
@@ -233,6 +233,7 @@ Output
 ./technical/911report/chapter-13.5.txt
 ./technical/911report/chapter-3.txt
 ```
+
 This command searches for files within the ./technical directory and its subdirectories that are larger than 170 megabytes. 
 
 ## Option 4: find -maxdepth (limit listing results), Source: https://www.howtoforge.com/tutorial/linux-find-command/
@@ -240,10 +241,9 @@ This command searches for files within the ./technical directory and its subdire
 
 ```
 find ./technical -maxdepth 1 -type d
-```
 
 Output
-```
+
 ./technical
 ./technical/government
 ./technical/plos
@@ -256,10 +256,11 @@ This command searches for directories directly within the ./technical directory,
 
 ```
 find ./technical -maxdepth 1 -type f
-```
+
 Output
-```
+
 ./technical/.DS_Store
 ```
+
 The command find ./technical -maxdepth 1 -type d searches for files directly within the ./technical directory, up to a maximum depth of 1 level. 
 
