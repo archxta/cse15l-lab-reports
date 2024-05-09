@@ -1,7 +1,7 @@
 # Part 1: Bugs
 1. Failure inducing input: 
+
 ```
- 
 @Test
     public void testFilter() {
         List<String> list = new ArrayList<>();
