@@ -49,6 +49,7 @@
 ![Example 1](./bug.png)
 
 4. Before fixing the bug:
+
 ```
  public boolean checkString(String s) {
     return s.length() > 5;
