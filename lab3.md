@@ -21,6 +21,7 @@
     }
 
 ```
+
 2. Input that doesn't induce a failure
 
 ```
