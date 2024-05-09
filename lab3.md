@@ -43,7 +43,7 @@
 
 }
 ```
-3. Running the two tests (Failure inducing input test)
+3. Running the two tests 
 
 ![Example 1](./bug.png)
 
@@ -174,7 +174,7 @@ Output
 
 ```
 
-This command prints the file names that do not match the search pattern. In this case, we want to find all the files and directories that do not have a .txt extension
+This command prints the file names that do not match the search pattern. In this case, we want to find all the files that do not have a .txt extension
 
 
 ### Example 4
@@ -196,7 +196,7 @@ Output
 ./technical/plos
 ./technical/911report
 ```
-This command prints the directories that do not match the search pattern. In this case, we want to find all the directories that do not match the pattern "biomed*".
+This command prints the directories that do not match the search pattern. In this case, we want to find all the directories that do not have "biomed" in its path. 
 
 ## Option 3: find -size (search files by size), Source: https://www.howtoforge.com/tutorial/linux-find-command/
 ### Example 5
@@ -248,15 +248,13 @@ Output
 ./technical/biomed
 ./technical/911report
 ```
-
+This command searches for directories directly within the ./technical directory, up to a maximum depth of 1 level. 
 
 ### Example 8
 
 ```
 find ./technical -maxdepth 1 -type f
 ```
-The command find searches for directories directly within the ./technical directory, up to a maximum depth of 1 level. 
-
 Output
 ```
 ./technical/.DS_Store
