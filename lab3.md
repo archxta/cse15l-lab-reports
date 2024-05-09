@@ -99,9 +99,9 @@ After fixing the bug
 5. This fix addresses the bug because before fixing the code, the method filter() appended the elements to the resulting list to the beginning and not to the end of the list. The fixed code properly checks if the resulting list is 0 and if it is, it will add the string to the list if the StringChecker returns true for the string, and if the resutling list is not 0, it will add the string to the end of the list. This will keep same order that they appeared in the input list.
 
 
-#Part 2: Researching Commands 
-##Option 1: find -name (search by filename pattern), Source: https://www.howtoforge.com/tutorial/linux-find-command/
-###Example 1: 
+# Part 2: Researching Commands 
+# Option 1: find -name (search by filename pattern), Source: https://www.howtoforge.com/tutorial/linux-find-command/
+# Example 1: 
 
 ```
 find ./technical -name "*.txt"
