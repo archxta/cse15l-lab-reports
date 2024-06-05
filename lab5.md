@@ -14,8 +14,8 @@ Hi! I can see that your program encounters an issue with capitalizing the first 
 ## Information student got
 Thank you for your response! I just looked over the code and I realized I need to adjust the logic inside the loop to capitalize only the first letter of each word while keeping the rest of the word in lowercase. To fix the bug, I used substring(0, 1).toUpperCase() to capitalize only the first letter of each word and substring(1).toLowerCase() to convert the rest of the word to lowercase to ensure that each word in the output string has its first letter capitalized while keeping the rest of the word in lowercase. 
 
- ![ieng6](./finalcode.png)
- ![ieng6](./finaloutput.png)
+![ieng6](./finalcode.png)
+![ieng6](./finaloutput.png)
 
 ## All information about setup
 
